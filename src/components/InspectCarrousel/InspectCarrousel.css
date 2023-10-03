@@ -1,0 +1,48 @@
+.backdrop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.backdrop-container svg {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.backdrop-container svg:hover {
+  fill: var(--pink);
+}
+
+.carousel-root {
+  width: 100%;
+}
+
+.carousel .slide {
+  padding: 0 4rem;
+  display: grid;
+  align-items: center;
+}
+
+.carousel-section {
+  overflow: hidden;
+  align-self: center;
+  display: flex;
+  justify-self: center;
+}
+
+.carousel-image-item {
+  height: 100%;
+}
